@@ -1,0 +1,51 @@
+.text-all-white * {
+  @apply text-white;
+}
+
+.text-all-black * {
+  @apply text-black;
+}
+
+.text-all-green1 * {
+  @apply text-green1;
+}
+
+.text-all-brown1 * {
+  @apply text-brown1;
+}
+
+.text-all-red * {
+  @apply text-brown2/50;
+}
+
+.text-all-green2 * {
+  @apply text-green2;
+}
+
+.text-all-green3 * {
+  @apply text-green3;
+}
+
+.text-all-yellow * {
+  @apply text-yellow-500;
+}
+
+.text-all-center * {
+  @apply text-center;
+}
+
+.text-all-left * {
+  @apply text-left;
+}
+
+.text-all-right * {
+  @apply text-right;
+}
+
+.font-all-bold * {
+  @apply font-bold;
+}
+
+.font-all-mono * {
+  @apply !font-mono;
+}

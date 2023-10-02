@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ul,
+  ol {
+    list-style: revert;
+  }
+}
+
+body {
+  @apply min-h-screen;
+}
+
+* {
+  color: #252525;
+  @apply duration-300 scroll-smooth;
+}
+
+input,
+textarea,
+button,
+a {
+  @apply focus:outline-none;
+}
+
+button:hover,
+a:hover {
+  @apply opacity-80;
+}
+
+@import "./flexes.css";
+@import "./text.css";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:root {
+  --swiper-theme-color: #ffffff !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

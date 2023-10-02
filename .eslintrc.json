@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:@next/next/recommended",
+    "standard-with-typescript",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"],
+    "jsx": true,
+    "useJSXTextNode": true
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "@typescript-eslint/prefer-optional-chain": "warn",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": ["warn"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off"
+  }
+}
